@@ -15,10 +15,10 @@ class Server {
     constructor() {
         this.app = express();
         this.port = process.env.PORT;
-        this.usuarioPath = '/opinion-manager/v1/users';
-        this.authPath = '/opinion-manager/v1/auth';
-        this.postPath = '/opinion-manager/v1/posts';
-        this.commentsPath = '/opinion-manager/v1/comments';
+        this.usuarioPath = '/gestorOpiniones/v1/users';
+        this.authPath = '/gestorOpiniones/v1/auth';
+        this.postPath = '/gestorOpiniones/v1/posts';
+        this.commentsPath = '/gestorOpiniones/v1/comments';
 
         this.middlewares();
         this.conectarDB();
