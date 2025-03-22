@@ -18,16 +18,6 @@ export const getPosts = async (req = request, res = response) => {
         posts,
     });
 }
-
-export const getPostById = async (req, res) => {
-    const { id } = req.params;
-    const post = await Post.findOne({ _id: id });
-
-    res.status(200).json({
-        post,
-    });
-}
-
 export const createPost = async (req, res) => {
     const { title, category, text } = req.body;
 
